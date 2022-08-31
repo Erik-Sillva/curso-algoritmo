@@ -1,16 +1,16 @@
 programa {
 	funcao inicio() {
-		real km, kmr, day, dayr, total
-		escreva("Quantos km você rodou?: ")
-		leia(km)
-		escreva("Por quantos dias você alugou o carro?: ")
+		inteiro day
+		real hrs, salhr, salM
+		escreva("Quantos dias você trabalhou esse mês?: ")
 		leia(day)
-		kmr = 0.20 * km
-		dayr = 90 * day
-		total = kmr + dayr
-		escreva("Valor a ser pago pelo total de quilômetros rodados: R$" + kmr)
-		escreva("\n Valor a ser pago pelo total de dias alugados: R$" + dayr)
-		escreva("\n Valor total a ser pago: R$" + total)
+		escreva("Quantas horas você trabalha por dia?: ")
+		leia(hrs)
+		escreva("Quanto você recebe por hora trabalhada?: ")
+		leia(salhr)
+		salM = salhr * hrs
+		escreva("Seu salário esse mês será de: R$" + salM)
+		
 	}
 }
 
@@ -19,7 +19,7 @@ programa {
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 436; 
+ * @POSICAO-CURSOR = 348; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
